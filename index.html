@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gradient circle rotate and animation</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+
+<body>
+
+  <div id='layout' class="layout">
+	<div class="col2"><span>РЕГИСТРАТУРА<span></div> <!-- Колонка 2 (центральная) -->
+  </div>
+
+  <h1 class="gradient-1">GRADIENT</h1>
+
+  <svg class="svg1">
+      <circle class="circle-1" cx="25" cy="25" r="23"/>
+      Sorry, your browser does not support inline SVG.
+  </svg>
+
+  <button>Gradient Image</button>
+
+  
+  <img id="img" src="images/picture/close.png"/>
+  
+  <div class="spinner">
+    <div class="outer">
+      <div class="inner">
+    	  <div class="in-inner"></div>  
+      </div>
+    </div>
+    <img class="red-cross" src="images/red-cross.png">
+  </div>
+
+  <div class="spinner64">
+    <div class="outer64">
+      <div class="inner64">
+        <div class="in-inner64"></div>  
+      </div>
+    </div>
+    <img class="red-cross" src="images/red-cross-32.png">
+  </div>
+
+  <div style="background-color: red; height: 100px; width: 500px;">
+    <div style="background-color: green; height: 100px; width: 300px; margin: auto;">
+      <div style="background-color: blue; height: 100px; width: 100px; margin: auto;">
+        //Content
+      </div>
+    </div>
+  </div>  
+
+  <svg width="450" height="450">
+    <linearGradient id="linearColors1" x1="0" y1="0" x2="1" y2="1">
+       <stop offset="0%" stop-color="#01E400"></stop>
+       <stop offset="100%" stop-color="#FEFF01"></stop>
+    </linearGradient>
+    <linearGradient id="linearColors2" x1="0.5" y1="0" x2="0.5" y2="1">
+       <stop offset="0%" stop-color="#FEFF01"></stop>
+       <stop offset="100%" stop-color="#FF7E00"></stop>
+    </linearGradient>
+    <linearGradient id="linearColors3" x1="1" y1="0" x2="0" y2="1">
+       <stop offset="0%" stop-color="#FF7E00"></stop>
+       <stop offset="100%" stop-color="#FB0300"></stop>
+    </linearGradient>
+    <linearGradient id="linearColors4" x1="1" y1="1" x2="0" y2="0">
+       <stop offset="0%" stop-color="#FB0300"></stop>
+       <stop offset="100%" stop-color="#9B004A"></stop>
+    </linearGradient>
+    <linearGradient id="linearColors5" x1="0.5" y1="1" x2="0.5" y2="0">
+       <stop offset="0%" stop-color="#9B004A"></stop>
+       <stop offset="100%" stop-color="#7D0022"></stop>
+    </linearGradient>
+    <linearGradient id="linearColors6" x1="0" y1="1" x2="1" y2="0">
+       <stop offset="0%" stop-color="#7D0022"></stop>
+       <stop offset="100%" stop-color="#01E400"></stop>
+    </linearGradient>
+   <path d="M150 10 a120 120 0 0 1 103.9230 60"
+        fill="none" stroke="url(#linearColors1)" stroke-width="5" />
+  <path d="M253.9230 70 a120 120 0 0 1 0 120"
+        fill="none" stroke="url(#linearColors2)" stroke-width="5" />
+  <path d="M253.9230 190 a120 120 0 0 1 -103.9230 60"
+        fill="none" stroke="url(#linearColors3)" stroke-width="5" />
+  <path d="M150 250 a120 120 0 0 1 -103.9230 -60"
+        fill="none" stroke="url(#linearColors4)" stroke-width="5" />
+  <path d="M46.077 190 a120 120 0 0 1 0 -120"
+        fill="none" stroke="url(#linearColors5)" stroke-width="5" />
+  <path d="M46.077 70 a120 120 0 0 1 103.9230 -60"
+        fill="none" stroke="url(#linearColors6)" stroke-width="5" />
+</svg>
+
+<div id="animate-area"></div>
+
+</body>
+</html>

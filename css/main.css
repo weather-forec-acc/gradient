@@ -1,0 +1,235 @@
+/* Текст заголовка РЕГИСТРАТУРА */
+.gradient-1 {
+  display:inline-block;
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  animation: Gradient 15s linear infinite;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 200% 0%
+    /*background: linear-gradient(red, yellow);*/
+  }
+  50% {
+    background-position: 100% 0%
+    /*background: linear-gradient(green, blue);*/
+  }
+  100% {
+    background-position: 0% 0%
+    /*background: linear-gradient(red, yellow);*/
+  }
+}
+.svg1 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}
+.circle-1 {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  fill: transparent;
+  stroke-width: 3px;
+  stroke: green;
+}
+
+.spinner {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #808080;
+  border-radius: 5px;
+}
+
+.outer {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #fff;
+  border-top: 1px solid lime;
+  border-radius: 50%;
+  animation: rotate-outer 10s linear infinite;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.inner {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  border-top: 1px solid red;
+  border-radius: 50%;
+  animation: rotate-inner 6s linear infinite;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-self: center;
+}
+.in-inner {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-top: 1px solid yellow;
+  border-radius: 50%;
+  animation: rotate-inner 6s linear infinite;
+  box-sizing: border-box;
+  align-self: center;
+}
+.red-cross {
+  position: absolute;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.spinner64 {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #808080;
+  border-radius: 5px;
+}
+
+.outer64 {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-top: 2px solid lime;
+  border-radius: 50%;
+  animation: rotate-outer 10s linear infinite;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.inner64 {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-top: 2px solid red;
+  border-radius: 50%;
+  animation: rotate-inner 6s linear infinite;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-self: center;
+}
+.in-inner64 {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-top: 2px solid yellow;
+  border-radius: 50%;
+  animation: rotate-inner 6s linear infinite;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+@-webkit-keyframes rotate-outer  {
+  0% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }  
+}
+
+@-webkit-keyframes rotate-inner  {
+  0% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+#layout {
+  background: linear-gradient(90deg, #ddd 45%, #ff0, #ddd 55%);
+  background-size: 200% 100%;
+  animation: Gradient 15s linear infinite;
+  overflow: hidden;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Текст заголовка РЕГИСТРАТУРА */
+.col2 > span {
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  animation: Gradient 15s linear infinite;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 200% 0%
+    /*background: linear-gradient(red, yellow);*/
+  }
+  50% {
+    background-position: 100% 0%
+    /*background: linear-gradient(green, blue);*/
+  }
+  100% {
+    background-position: 0% 0%
+    /*background: linear-gradient(red, yellow);*/
+  }
+}
+
+#img:hover {
+  animation: leaves 2s linear infinite;
+}
+@keyframes leaves {
+  0% {
+    /*background-size: 16px 16px;
+    /*-webkit-transform: background-size: 16px 16px;*/
+    transform: scale(1.0);
+  }
+  50% {
+    /*background-size: 24px 24px;
+    /*-webkit-transform: background-size: 24px 24px;*/
+    transform: scale(0.5);
+  }
+  100% {
+    /*background-size: 16px 16px;
+    /*-webkit-transform: background-size: 16px 16px;*/
+    transform: scale(1.0);
+  }
+}
+
+#animate-area {
+    width: 1124px;
+    height: 190px;
+    background-image: url(../images/picture/bg-clouds.png);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 10s linear infinite;
+    -ms-animation: animatedBackground 40s linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -webkit-animation: animatedBackground 10s linear infinite;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
