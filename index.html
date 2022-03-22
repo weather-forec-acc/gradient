@@ -58,7 +58,7 @@
     </div>
   </div>
 
-  <svg width="450" height="450">
+  <svg width="350" height="350">
     <linearGradient id="linearColors1" x1="0" y1="0" x2="1" y2="1">
        <stop offset="0%" stop-color="#01E400"></stop>
        <stop offset="100%" stop-color="#FEFF01"></stop>
@@ -99,10 +99,9 @@
 
 <div id="animate-area"></div>
 		<script>
-			function fetchCurrDate() {
-  
+	const getCurrentTimeDate = () => {
     let currentTimeDate = new Date();
-	var weekday = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+    var weekday = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
     var month = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
     var hours = currentTimeDate.getHours();
     var minutes = currentTimeDate.getMinutes();
@@ -116,9 +115,10 @@
     document.getElementById("time").innerHTML = currentTime;
     document.getElementById("day").innerHTML = currentDay;
     document.getElementById("date").innerHTML = fullDate;
-  }
+    setTimeout(getCurrentTimeDate, 30000);
+}
 			// Вызвать new Date() и отобразить дату
-  fetchCurrDate();
+  getCurrentTimeDate();
 		</script>
 
 </body>
