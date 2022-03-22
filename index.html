@@ -102,8 +102,10 @@
     var month = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
     var hours = currentTimeDate.getHours();
     var minutes = currentTimeDate.getMinutes();
+    var seconds = currentTimeDate.getSeconds();		
     minutes = minutes < 10 ? '0' + minutes: minutes;
-    var currentTime = `${hours}:${minutes}`;
+    seconds = seconds < 10 ? '0' + seconds: seconds;
+    var currentTime = `${hours}:${minutes}:${seconds}`;
     var currentDay = weekday[currentTimeDate.getDay()];
     var currentDate = currentTimeDate.getDate();
     var currentMonth = month[currentTimeDate.getMonth()];
@@ -112,7 +114,7 @@
     document.getElementById("time").innerHTML = currentTime;
     document.getElementById("day").innerHTML = currentDay;
     document.getElementById("date").innerHTML = fullDate;
-    setTimeout(getCurrentTimeDate, 30000);
+    setTimeout(getCurrentTimeDate, 3000);
 }
 			// Вызвать new Date() и отобразить дату
   getCurrentTimeDate();
