@@ -18,7 +18,9 @@
         <span id="time"></span>
         <span id="day"></span>
 	<span id="date"></span>
-</div>		
+  </div>
+		
+  <div id="date2" style="font-size:22px; color: blue;"></div>
 
   <svg class="svg1">
       <circle class="circle-1" cx="25" cy="25" r="23"/>
@@ -119,6 +121,7 @@
 }
 			// Вызвать new Date() и отобразить дату
   getCurrentTimeDate();
+			document.getElementById("date2").innerHTML = moment().format();
 			console.log(moment().format());
 		</script>
 
