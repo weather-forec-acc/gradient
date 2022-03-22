@@ -117,13 +117,14 @@
     document.getElementById("time").innerHTML = currentTime;
     document.getElementById("day").innerHTML = currentDay;
     document.getElementById("date").innerHTML = fullDate;
+		
+    document.getElementById("date2").innerHTML = moment().format();
+		
     setTimeout(getCurrentTimeDate, 1000);
 }
-			// Вызвать new Date() и отобразить дату
+  // Вызвать new Date() и отобразить дату
   getCurrentTimeDate();
-			document.getElementById("date2").innerHTML = moment().format();
-			console.log(moment().format());
-		</script>
+</script>
 
 </body>
 </html>
